@@ -9,11 +9,13 @@
   },
   "author": "barlockm@gmail.com",
   "license": "ISC",
-  "devDependencies": {
-    "@native-icons/build": "^1.0.0",
-    "feather-icons": "^4.7.3",
+  "peerDependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-native-svg": "^6.4.1"
+  },
+  "devDependencies": {
+    "@native-icons/build": "^1.0.0",
+    "feather-icons": "^4.7.3"
   }
 }

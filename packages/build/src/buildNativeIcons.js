@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 const globby = require('globby');
 const path = require('path');
 const cheerio = require('cheerio');
+const css = require('css');
 const prettier = require('prettier');
 const _ = require('lodash');
 const componentTemplate = require('./componentTemplate');
@@ -26,23 +27,23 @@ const ensureAttrsMatchProps = (name, el) => {
   });
 };
 
-const wrapChildrenInGroup = ($) => {
+const wrapChildrenInGroup = ($, colorProp) => {
   const svgElement = $('svg')[0];
   const svgSelection = $(svgElement);
 
   const extraSvgProps = _.difference(Object.keys(svgElement.attribs), nativeSvgProps);
 
-  if (extraSvgProps.length > 0) {
-    const propString = extraSvgProps.reduce((propString, attribute) => {
-      propString += `${attribute}="${svgSelection.attr(attribute)}" `;
-      return propString;
-    }, 'otherProps="..." ');
+  let propString = extraSvgProps.reduce((propString, attribute) => {
+    propString += `${attribute}="${$('svg').attr(attribute)}" `;
+    return propString;
+  }, '') + ' otherProps="..."';
 
-    svgSelection.children().wrapAll(`<g ${propString}></g>`);
-    extraSvgProps.forEach(attr => svgSelection.removeAttr(attr));
-  } else {
-    $(svgElement).attr('otherProps', '...');
+  if (!extraSvgProps.includes(colorProp)) {
+    propString += ` ${colorProp}={color}`
   }
+
+  svgSelection.children().wrapAll(`<g ${propString}></g>`);
+  extraSvgProps.forEach(attr => $('svg').removeAttr(attr));
 };
 
 const convertToNative = ($, el, colorProp) => {
@@ -63,20 +64,42 @@ const convertToNative = ($, el, colorProp) => {
     if (extraneousAttrs.includes(x)) {
       $(el).removeAttr(x);
     }
+
+    // Remove Id's from all components that aren't supposed to have one.
+    if (x === 'id' && !nativeComponents[el.tagName].includes('id')) {
+      $(el).removeAttr(x);
+    }
   });
 };
 
+const spreadStylesToProperties = ($) => {
+  const styles = $('style').contents().text();
+  const { stylesheet } = css.parse(styles);
 
+  stylesheet.rules.forEach(({ selectors, declarations }) => {
+    declarations.forEach(({ property, value}) => {
+      $(selectors.join(' ')).attr(property, value)
+    });
+  });
 
-const buildNativeIcons = async (svgPattern, colorProp, outputDir) => {
-  const svgPaths = await globby(svgPattern);
+  $('style').remove();
+};
+
+const buildNativeIcons = async (opts) => {
+  const { svgGlob, colorProp = 'fill', outputDir, nameMap } = opts;
+
+  const svgPaths = await globby(svgGlob);
+
+  const getComponentName = (filePath) => {
+    const name = upperCamel(path.basename(filePath, '.svg'));
+    return nameMap ? nameMap(name) : name;
+  };
 
   await fs.ensureDir(outputDir);
 
   await Promise.all(svgPaths.map(async filePath => {
     const svg = await fs.readFile(filePath, 'utf8');
-    const name = path.basename(filePath, '.svg');
-    const componentName = upperCamel(name);
+    const componentName = getComponentName(filePath);
     const outputPath = path.join(outputDir, `${componentName}.js`);
     const $ = cheerio.load(svg, {
       xmlMode: true
@@ -88,11 +111,12 @@ const buildNativeIcons = async (svgPattern, colorProp, outputDir) => {
       .attr('height', '{size}')
       .attr('width', '{size}');
 
-    wrapChildrenInGroup($);
+    spreadStylesToProperties($);
+    wrapChildrenInGroup($, colorProp);
 
     $('*').each((index, el) => {
       convertToNative($, el, colorProp);
-      ensureAttrsMatchProps(name, el);
+      ensureAttrsMatchProps(componentName, el);
     });
 
     // Adding on Icon to avoid colliding with SVG namespace
@@ -113,10 +137,7 @@ const buildNativeIcons = async (svgPattern, colorProp, outputDir) => {
     path.join(outputDir, 'index.js'),
     svgPaths
       .map(filePath => {
-        const name = path.basename(filePath, '.svg');
-        const componentName = upperCamel(name);
-
-
+        const componentName = getComponentName(filePath);
         return `export ${componentName} from './${componentName}';`
       })
       .join('\n'),

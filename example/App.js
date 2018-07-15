@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import * as feather from '@native-icons/feather';
+import * as ionicons from '@native-icons/ionicons';
+
+const IconCollection = ({ collection, title }) => (
+  <Fragment>
+    <Text style={styles.iconTitle}>{title}</Text>
+    <View style={styles.container}>
+      { Object.keys(collection).map(icon => (
+        <View style={styles.iconContainer} key={icon}>
+          { React.createElement(collection[icon], { color: 'gray', size: 30 }) }
+          <Text>{icon}</Text>
+        </View>
+      ))}
+    </View>
+  </Fragment>
+);
 
 export default class App extends React.Component {
   render() {
     return (
       <ScrollView>
-        <Text style={styles.iconTitle}>Feather</Text>
-        <View style={styles.container}>
-          { Object.keys(feather).map(icon => (
-            <View style={styles.iconContainer} key={icon}>
-              { React.createElement(feather[icon], { color: 'green', size: 30 }) }
-              <Text>{icon}</Text>
-            </View>
-          ))}
-        </View>
+        <IconCollection collection={ionicons} title='Ionicons'/>
+        <IconCollection collection={feather} title='Feather'/>
       </ScrollView>
     );
   }
