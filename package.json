@@ -1,0 +1,15 @@
+{
+  "name": "native-icons",
+  "version": "1.0.0",
+  "description": "React native vector icons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^2.11.0",
+    "prettier": "^1.13.7"
+  }
+}

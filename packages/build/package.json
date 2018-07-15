@@ -1,0 +1,18 @@
+{
+  "name": "@native-icons/build",
+  "version": "1.0.0",
+  "description": "React Native svg to component generator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "barlockm@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fs-extra": "^6.0.1",
+    "globby": "^8.0.1",
+    "lodash": "^4.17.10",
+    "react-native-svg": "^6.4.1"
+  }
+}
