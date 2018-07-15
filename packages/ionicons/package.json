@@ -1,10 +1,12 @@
 {
   "name": "@native-icons/ionicons",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "React native SVG Ionicons",
+  "repository": "https://github.com/barlock/native-icons",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "cp ../../README.md .",
     "build": "rm -rf src && node scripts/build.js"
   },
   "author": "barlockm@gmail.com",

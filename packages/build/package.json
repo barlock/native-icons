@@ -1,7 +1,8 @@
 {
   "name": "@native-icons/build",
   "version": "1.0.0",
-  "description": "React Native svg to component generator ",
+  "description": "React Native svg to component generator",
+  "repository": "https://github.com/barlock/native-icons",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

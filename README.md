@@ -34,17 +34,21 @@ const Main = () => (
 ### Styling
 All Icons accept a `size` and `color` prop for basic stylings. All other props are passed into the svg. Check out [react-native-svg's](https://github.com/react-native-community/react-native-svg#common-props) listings of props for examples and ideas.
 
-Every icon set is different, and you might need to look at the source a bit, but you can customize all of the svg properties by passing them as props.
+Every icon set is different, and you might need to look at the source a bit, but you can customize all of the svg properties by passing them as props. You can do things like create outline icons by reversing fill and stroke
 
 ```js
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Anchor } from '@native-icons/feather';
+import { Home } from '@native-icons/ionicons';
 
 const Main = () => (
   <View>
     <Anchor strokeWidth={4}/>
     <Text>Anchors away!<Text/>
+
+    <Home fill='none' strokeWidth={2} />
+    <Text>Home Outline</Text>
   </View>
 );
 ```

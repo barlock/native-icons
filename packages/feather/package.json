@@ -1,10 +1,12 @@
 {
   "name": "@native-icons/feather",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "React native SVG Feather icons",
+  "repository": "https://github.com/barlock/native-icons",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "cp ../../README.md .",
     "build": "rm -rf src && node scripts/build.js"
   },
   "author": "barlockm@gmail.com",
