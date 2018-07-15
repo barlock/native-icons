@@ -20,10 +20,10 @@ class RssIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Path d="M4 11a9 9 0 0 1 9 9" />
           <Path d="M4 4a16 16 0 0 1 16 16" />

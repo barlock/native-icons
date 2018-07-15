@@ -20,10 +20,10 @@ class SunsetIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Path d="M17 18a5 5 0 0 0-10 0" />
           <Line x1="12" y1="9" x2="12" y2="2" />

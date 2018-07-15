@@ -20,10 +20,10 @@ class ApertureIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="12" r="10" />
           <Line x1="14.31" y1="8" x2="20.05" y2="17.94" />

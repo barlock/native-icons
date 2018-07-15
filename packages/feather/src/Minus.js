@@ -20,10 +20,10 @@ class MinusIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="5" y1="12" x2="19" y2="12" />
         </G>

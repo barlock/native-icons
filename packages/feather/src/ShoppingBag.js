@@ -20,10 +20,10 @@ class ShoppingBagIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
           <Line x1="3" y1="6" x2="21" y2="6" />

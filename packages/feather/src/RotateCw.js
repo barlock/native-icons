@@ -20,10 +20,10 @@ class RotateCwIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="23 4 23 10 17 10" />
           <Path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />

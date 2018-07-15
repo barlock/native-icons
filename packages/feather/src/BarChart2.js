@@ -20,10 +20,10 @@ class BarChart2Icon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="18" y1="20" x2="18" y2="10" />
           <Line x1="12" y1="20" x2="12" y2="4" />

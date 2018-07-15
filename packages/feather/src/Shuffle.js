@@ -20,10 +20,10 @@ class ShuffleIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="16 3 21 3 21 8" />
           <Line x1="4" y1="20" x2="21" y2="3" />

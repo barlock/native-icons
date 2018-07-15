@@ -20,10 +20,10 @@ class CrosshairIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="12" r="10" />
           <Line x1="22" y1="12" x2="18" y2="12" />

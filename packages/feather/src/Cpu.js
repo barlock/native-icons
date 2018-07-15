@@ -20,10 +20,10 @@ class CpuIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
           <Rect x="9" y="9" width="6" height="6" />

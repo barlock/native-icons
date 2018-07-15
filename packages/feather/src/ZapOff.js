@@ -20,10 +20,10 @@ class ZapOffIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="12.41 6.75 13 2 10.57 4.92" />
           <Polyline points="18.57 12.91 21 10 15.66 10" />

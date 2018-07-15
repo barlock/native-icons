@@ -20,10 +20,10 @@ class FastForwardIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polygon points="13 19 22 12 13 5 13 19" />
           <Polygon points="2 19 11 12 2 5 2 19" />

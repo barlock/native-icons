@@ -20,10 +20,10 @@ class AlignJustifyIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="21" y1="10" x2="3" y2="10" />
           <Line x1="21" y1="6" x2="3" y2="6" />

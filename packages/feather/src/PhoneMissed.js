@@ -20,10 +20,10 @@ class PhoneMissedIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="23" y1="1" x2="17" y2="7" />
           <Line x1="17" y1="1" x2="23" y2="7" />

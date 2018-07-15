@@ -20,10 +20,10 @@ class UploadCloudIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="16 16 12 12 8 16" />
           <Line x1="12" y1="12" x2="12" y2="21" />

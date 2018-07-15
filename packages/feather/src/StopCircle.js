@@ -20,10 +20,10 @@ class StopCircleIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="12" r="10" />
           <Rect x="9" y="9" width="6" height="6" />

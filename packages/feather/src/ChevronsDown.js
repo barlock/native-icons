@@ -20,10 +20,10 @@ class ChevronsDownIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="7 13 12 18 17 13" />
           <Polyline points="7 6 12 11 17 6" />

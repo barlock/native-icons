@@ -20,10 +20,10 @@ class ToggleRightIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="1" y="5" width="22" height="14" rx="7" ry="7" />
           <Circle cx="16" cy="12" r="3" />

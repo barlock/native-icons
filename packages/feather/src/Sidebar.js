@@ -20,10 +20,10 @@ class SidebarIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
           <Line x1="9" y1="3" x2="9" y2="21" />

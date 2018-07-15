@@ -20,10 +20,10 @@ class UnlockIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
           <Path d="M7 11V7a5 5 0 0 1 9.9-1" />

@@ -20,10 +20,10 @@ class VideoIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polygon points="23 7 16 12 23 17 23 7" />
           <Rect x="1" y="5" width="15" height="14" rx="2" ry="2" />

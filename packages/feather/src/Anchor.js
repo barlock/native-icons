@@ -20,10 +20,10 @@ class AnchorIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="5" r="3" />
           <Line x1="12" y1="22" x2="12" y2="8" />

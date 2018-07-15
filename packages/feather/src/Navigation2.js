@@ -20,10 +20,10 @@ class Navigation2Icon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polygon points="12 2 19 21 12 17 5 21 12 2" />
         </G>

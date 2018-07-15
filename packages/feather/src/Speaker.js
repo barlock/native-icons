@@ -20,10 +20,10 @@ class SpeakerIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
           <Circle cx="12" cy="14" r="4" />

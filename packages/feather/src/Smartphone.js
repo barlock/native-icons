@@ -20,10 +20,10 @@ class SmartphoneIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
           <Line x1="12" y1="18" x2="12" y2="18" />

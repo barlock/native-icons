@@ -20,10 +20,10 @@ class GlobeIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="12" r="10" />
           <Line x1="2" y1="12" x2="22" y2="12" />

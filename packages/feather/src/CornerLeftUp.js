@@ -20,10 +20,10 @@ class CornerLeftUpIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="14 9 9 4 4 9" />
           <Path d="M20 20h-7a4 4 0 0 1-4-4V4" />

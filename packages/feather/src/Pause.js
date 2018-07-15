@@ -20,10 +20,10 @@ class PauseIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="6" y="4" width="4" height="16" />
           <Rect x="14" y="4" width="4" height="16" />

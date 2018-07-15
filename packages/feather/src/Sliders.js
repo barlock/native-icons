@@ -20,10 +20,10 @@ class SlidersIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="4" y1="21" x2="4" y2="14" />
           <Line x1="4" y1="10" x2="4" y2="3" />

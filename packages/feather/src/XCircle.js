@@ -20,10 +20,10 @@ class XCircleIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="12" r="10" />
           <Line x1="15" y1="9" x2="9" y2="15" />

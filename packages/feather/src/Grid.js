@@ -20,10 +20,10 @@ class GridIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="3" y="3" width="7" height="7" />
           <Rect x="14" y="3" width="7" height="7" />

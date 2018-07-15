@@ -20,10 +20,10 @@ class RepeatIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="17 1 21 5 17 9" />
           <Path d="M3 11V9a4 4 0 0 1 4-4h14" />

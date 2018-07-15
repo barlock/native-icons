@@ -20,10 +20,10 @@ class TypeIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="4 7 4 4 20 4 20 7" />
           <Line x1="9" y1="20" x2="15" y2="20" />

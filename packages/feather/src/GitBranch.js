@@ -20,10 +20,10 @@ class GitBranchIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="6" y1="3" x2="6" y2="15" />
           <Circle cx="18" cy="6" r="3" />

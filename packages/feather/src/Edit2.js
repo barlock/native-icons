@@ -20,10 +20,10 @@ class Edit2Icon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polygon points="16 3 21 8 8 21 3 21 3 16 16 3" />
         </G>

@@ -20,10 +20,10 @@ class HashIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="4" y1="9" x2="20" y2="9" />
           <Line x1="4" y1="15" x2="20" y2="15" />

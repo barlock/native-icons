@@ -20,10 +20,10 @@ class PhoneOutgoingIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="23 7 23 1 17 1" />
           <Line x1="16" y1="8" x2="23" y2="1" />

@@ -20,10 +20,10 @@ class PieChartIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
           <Path d="M22 12A10 10 0 0 0 12 2v10z" />

@@ -20,10 +20,10 @@ class ChevronRightIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="9 18 15 12 9 6" />
         </G>

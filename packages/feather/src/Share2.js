@@ -20,10 +20,10 @@ class Share2Icon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="18" cy="5" r="3" />
           <Circle cx="6" cy="12" r="3" />

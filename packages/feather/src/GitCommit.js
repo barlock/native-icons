@@ -20,10 +20,10 @@ class GitCommitIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="12" r="4" />
           <Line x1="1.05" y1="12" x2="7" y2="12" />

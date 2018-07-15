@@ -20,10 +20,10 @@ class ArchiveIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="21 8 21 21 3 21 3 8" />
           <Rect x="1" y="3" width="22" height="5" />

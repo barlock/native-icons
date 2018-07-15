@@ -20,10 +20,10 @@ class ShoppingCartIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="9" cy="21" r="1" />
           <Circle cx="20" cy="21" r="1" />

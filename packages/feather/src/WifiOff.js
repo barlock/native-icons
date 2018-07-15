@@ -20,10 +20,10 @@ class WifiOffIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="1" y1="1" x2="23" y2="23" />
           <Path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55" />

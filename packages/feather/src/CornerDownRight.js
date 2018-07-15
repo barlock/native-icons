@@ -20,10 +20,10 @@ class CornerDownRightIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="15 10 20 15 15 20" />
           <Path d="M4 4v7a4 4 0 0 0 4 4h12" />

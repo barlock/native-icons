@@ -20,10 +20,10 @@ class ArrowUpLeftIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="17" y1="17" x2="7" y2="7" />
           <Polyline points="7 17 7 7 17 7" />

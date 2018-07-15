@@ -20,10 +20,10 @@ class PercentIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="19" y1="5" x2="5" y2="19" />
           <Circle cx="6.5" cy="6.5" r="2.5" />

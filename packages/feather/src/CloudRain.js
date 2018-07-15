@@ -20,10 +20,10 @@ class CloudRainIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="16" y1="13" x2="16" y2="21" />
           <Line x1="8" y1="13" x2="8" y2="21" />

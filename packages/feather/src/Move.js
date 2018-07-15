@@ -20,10 +20,10 @@ class MoveIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="5 9 2 12 5 15" />
           <Polyline points="9 5 12 2 15 5" />

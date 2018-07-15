@@ -20,10 +20,10 @@ class Minimize2Icon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="4 14 10 14 10 20" />
           <Polyline points="20 10 14 10 14 4" />

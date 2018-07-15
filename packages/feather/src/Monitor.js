@@ -20,10 +20,10 @@ class MonitorIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
           <Line x1="8" y1="21" x2="16" y2="21" />

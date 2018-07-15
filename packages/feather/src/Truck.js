@@ -20,10 +20,10 @@ class TruckIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Rect x="1" y="3" width="15" height="13" />
           <Polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />

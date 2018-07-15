@@ -20,10 +20,10 @@ class TrendingDownIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="23 18 13.5 8.5 8.5 13.5 1 6" />
           <Polyline points="17 18 23 18 23 12" />

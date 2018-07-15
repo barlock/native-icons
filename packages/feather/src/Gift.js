@@ -20,10 +20,10 @@ class GiftIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="20 12 20 22 4 22 4 12" />
           <Rect x="2" y="7" width="20" height="5" />

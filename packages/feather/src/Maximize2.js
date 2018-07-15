@@ -20,10 +20,10 @@ class Maximize2Icon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="15 3 21 3 21 9" />
           <Polyline points="9 21 3 21 3 15" />

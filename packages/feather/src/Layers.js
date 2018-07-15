@@ -20,10 +20,10 @@ class LayersIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polygon points="12 2 2 7 12 12 22 7 12 2" />
           <Polyline points="2 17 12 22 22 17" />

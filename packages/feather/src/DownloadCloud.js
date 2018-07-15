@@ -20,10 +20,10 @@ class DownloadCloudIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="8 17 12 21 16 17" />
           <Line x1="12" y1="12" x2="12" y2="21" />

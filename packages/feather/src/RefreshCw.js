@@ -20,10 +20,10 @@ class RefreshCwIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="23 4 23 10 17 10" />
           <Polyline points="1 20 1 14 7 14" />

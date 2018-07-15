@@ -28,13 +28,13 @@ const ensureAttrsMatchProps = (name, el) => {
 };
 
 const wrapChildrenInGroup = ($, colorProp) => {
-  const svgElement = $('svg')[0];
+  const svgElement = $('Svg')[0];
   const svgSelection = $(svgElement);
 
   const extraSvgProps = _.difference(Object.keys(svgElement.attribs), nativeSvgProps);
 
   let propString = extraSvgProps.reduce((propString, attribute) => {
-    propString += `${attribute}="${$('svg').attr(attribute)}" `;
+    propString += `${attribute}="${$('Svg').attr(attribute)}" `;
     return propString;
   }, '');
 
@@ -44,8 +44,8 @@ const wrapChildrenInGroup = ($, colorProp) => {
 
   propString += ' otherProps="..."';
 
-  svgSelection.children().wrapAll(`<g ${propString}></g>`);
-  extraSvgProps.forEach(attr => $('svg').removeAttr(attr));
+  svgSelection.children().wrapAll(`<G ${propString}></G>`);
+  extraSvgProps.forEach(attr => $('Svg').removeAttr(attr));
 };
 
 const convertToNative = ($, el, colorProp) => {
@@ -114,10 +114,14 @@ const buildNativeIcons = async (opts) => {
       .attr('width', '{size}');
 
     spreadStylesToProperties($);
-    wrapChildrenInGroup($, colorProp);
 
     $('*').each((index, el) => {
       convertToNative($, el, colorProp);
+    });
+
+    wrapChildrenInGroup($, colorProp);
+
+    $('*').each((index, el) => {
       ensureAttrsMatchProps(componentName, el);
     });
 

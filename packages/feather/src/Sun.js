@@ -20,10 +20,10 @@ class SunIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Circle cx="12" cy="12" r="5" />
           <Line x1="12" y1="1" x2="12" y2="3" />

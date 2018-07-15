@@ -20,10 +20,10 @@ class PhoneForwardedIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="19 1 23 5 19 9" />
           <Line x1="15" y1="5" x2="23" y2="5" />

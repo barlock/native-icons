@@ -20,10 +20,10 @@ class PlayIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polygon points="5 3 19 12 5 21 5 3" />
         </G>

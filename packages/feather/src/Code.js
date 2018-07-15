@@ -20,10 +20,10 @@ class CodeIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polyline points="16 18 22 12 16 6" />
           <Polyline points="8 6 2 12 8 18" />

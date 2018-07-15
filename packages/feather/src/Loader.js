@@ -20,10 +20,10 @@ class LoaderIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Line x1="12" y1="2" x2="12" y2="6" />
           <Line x1="12" y1="18" x2="12" y2="22" />

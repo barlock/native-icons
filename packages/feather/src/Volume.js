@@ -20,10 +20,10 @@ class VolumeIcon extends PureComponent {
         <G
           fill="none"
           stroke={color}
-          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          {...otherProps}
         >
           <Polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
         </G>
