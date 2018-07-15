@@ -17,7 +17,7 @@ class PauseIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Path d="M96 448h106.7V64H96v384zM309.3 64v384H416V64H309.3z" />
         </G>
       </Svg>

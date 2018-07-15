@@ -17,7 +17,7 @@ class SkipBackwardIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Path d="M170.7 256L448 448V64L170.7 256zM64 64h64v384H64z" />
         </G>
       </Svg>

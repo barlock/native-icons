@@ -17,7 +17,7 @@ class WarningIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Path d="M32 464h448L256 48 32 464zm248-64h-48v-48h48v48zm0-80h-48v-96h48v96z" />
         </G>
       </Svg>

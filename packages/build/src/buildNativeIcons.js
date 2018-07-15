@@ -36,11 +36,13 @@ const wrapChildrenInGroup = ($, colorProp) => {
   let propString = extraSvgProps.reduce((propString, attribute) => {
     propString += `${attribute}="${$('svg').attr(attribute)}" `;
     return propString;
-  }, '') + ' otherProps="..."';
+  }, '');
 
   if (!extraSvgProps.includes(colorProp)) {
     propString += ` ${colorProp}={color}`
   }
+
+  propString += ' otherProps="..."';
 
   svgSelection.children().wrapAll(`<g ${propString}></g>`);
   extraSvgProps.forEach(attr => $('svg').removeAttr(attr));

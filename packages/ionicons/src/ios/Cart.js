@@ -17,7 +17,7 @@ class CartIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Ellipse
             transform="rotate(-1.057 159.995 423.97) scale(.99997)"
             cx="160"

@@ -17,7 +17,7 @@ class BookmarkIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Path d="M360 64H152c-22.002 0-40 17.998-40 40v344l144-64 144 64V104c0-22.002-17.998-40-40-40z" />
         </G>
       </Svg>

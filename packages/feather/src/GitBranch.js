@@ -18,9 +18,9 @@ class GitBranchIcon extends PureComponent {
     return (
       <Svg width={size} height={size} viewBox="0 0 24 24">
         <G
-          {...otherProps}
           fill="none"
           stroke={color}
+          {...otherProps}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

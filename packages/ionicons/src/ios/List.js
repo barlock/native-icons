@@ -17,7 +17,7 @@ class ListIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Circle cx="92" cy="256" r="28" />
           <Circle cx="92" cy="132" r="28" />
           <Circle cx="92" cy="380" r="28" />

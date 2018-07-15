@@ -17,7 +17,7 @@ class InformationIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Path d="M232 235h48v137h-48zM232 140h48v48h-48z" />
         </G>
       </Svg>

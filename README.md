@@ -32,6 +32,8 @@ const Main = () => (
 ```
 
 ### Styling
+All Icons accept a `size` and `color` prop for basic stylings. All other props are passed into the svg. Check out [react-native-svg's](https://github.com/react-native-community/react-native-svg#common-props) listings of props for examples and ideas.
+
 Every icon set is different, and you might need to look at the source a bit, but you can customize all of the svg properties by passing them as props.
 
 ```js

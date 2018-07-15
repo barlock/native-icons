@@ -17,7 +17,7 @@ class ArrowDroprightIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Path d="M192 128l128 128-128 128z" />
         </G>
       </Svg>

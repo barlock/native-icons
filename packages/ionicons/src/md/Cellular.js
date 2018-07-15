@@ -17,7 +17,7 @@ class CellularIcon extends PureComponent {
     const { color, size, ...otherProps } = this.props;
     return (
       <Svg viewBox="0 0 512 512" height={size} width={size}>
-        <G {...otherProps} fill={color}>
+        <G fill={color} {...otherProps}>
           <Path d="M64 448h384V64L64 448z" />
         </G>
       </Svg>
